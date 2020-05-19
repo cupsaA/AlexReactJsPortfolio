@@ -1,14 +1,13 @@
 import React, {Component} from "react";
-import classes from './About.module.css'
 
 
-class About extends Component{
+class Projects extends Component{
     render() {
         return(
-            <div className={classes.Aboutsection} id="about">
+            <div id="projects">
                 <p>From the about</p>
             </div>
         )
     }
 }
-export default About;
+export default Projects;

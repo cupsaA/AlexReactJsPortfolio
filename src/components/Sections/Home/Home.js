@@ -1,13 +1,21 @@
 import React, {Component} from "react";
-import classes from './Main.module.css'
+import classes from './Home.module.css'
+import Network from './Network/Network'
 
-class Main extends Component{
+class Home extends Component{
     render() {
         return(
-            <div className={classes.MainSection} id="main">
-                <p>From the main</p>
-            </div>
+            <section className={classes.HomeSection} id="home">
+                <div className={classes.HomeSectionCentered}>
+                    <h1>{this.props.name}</h1>
+                    <h3>I'm <span>{this.props.occupation}</span> based in {this.props.city} . {this.props.description}.</h3>
+                    <hr />
+                    <ul >
+                        <Network/>
+                    </ul>
+                </div>
+            </section>
         )
     }
 }
-export default Main;
+export default Home;

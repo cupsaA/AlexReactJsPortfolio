@@ -1,0 +1,44 @@
+.AboutSection{
+    background-color: #2B2B2B;
+    padding: 25px 50px;
+    overflow: hidden;
+}
+
+.AboutSectionColumnLeft{
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin-left: 20%;
+}
+
+.AboutSectionColumnRight{
+    float: right;
+    width: 30%;
+    margin-right: 20%;
+
+}
+
+.AboutSectionColumnRight p{
+    text-align: left;
+    color: #7A7A7A;
+    line-height: 30px;
+}
+
+.AboutSectionColumnRight ul {
+    color: white;
+}
+
+.AboutSection img{
+    position: relative;
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.AboutSection h2{
+    color: white;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+

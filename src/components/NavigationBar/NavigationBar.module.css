@@ -1,22 +1,22 @@
-.Navbar{
-    position: fixed;
-    top: 0;
-    width: 100px;
+.NavigationBar{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
 }
 
-.Navbar > .active {
-    border-bottom: 1px solid white;
-    background-color: black;
+.NavigationBar a{
+    margin: auto;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.Navbar ul{
-    list-style: none;
-    text-align: right;
+.NavigationBar a:hover{
+    color: skyblue;
+    cursor: pointer;
 }
 
-.Navbar ul li{
-    color: black;
-    font-size: 2em;
-    padding-right: 20px;
-    display: inline;
-}
