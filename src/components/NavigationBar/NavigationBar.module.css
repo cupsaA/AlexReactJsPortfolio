@@ -1,0 +1,22 @@
+.Navbar{
+    position: fixed;
+    top: 0;
+    width: 100px;
+}
+
+.Navbar > .active {
+    border-bottom: 1px solid white;
+    background-color: black;
+}
+
+.Navbar ul{
+    list-style: none;
+    text-align: right;
+}
+
+.Navbar ul li{
+    color: black;
+    font-size: 2em;
+    padding-right: 20px;
+    display: inline;
+}
