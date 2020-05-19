@@ -4,8 +4,18 @@ import {Link} from 'react-scroll'
 
 class NavigationBar extends Component{
     render() {
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
         return(
-            <div className={classes.NavigationBar}>
+            <div className={classes.NavigationBar} id="navbar">
                 <Link activeClass="active" to="home" spy={true} smooth={true} offset={0} duration= {500}>
                     Home</Link>
                 <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration= {500}>

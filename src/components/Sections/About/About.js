@@ -14,12 +14,14 @@ class About extends Component {
                         <h2>About Me</h2>
                         <p>Some info describing me</p>
                         <h2>Contact Details</h2>
-
-                        <ul>
-                            <li>Coffee</li>
-                            <li>Tea</li>
-                            <li>Milk</li>
-                        </ul>
+                        <p className="address">
+                            <span>{this.props.name}</span><br/>
+                            <span>{this.props.city}<br/>
+                                {this.props.street}
+                            </span><br/>
+                            <span>{this.props.phoneNumber}</span><br/>
+                            <span>{this.props.email}</span>
+                        </p>
                     </div>
                 </div>
 
