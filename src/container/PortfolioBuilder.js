@@ -61,8 +61,8 @@ class PortfolioBuilder extends Component {
                        street={this.state.street}
                        email={this.state.email} />
                 <Resume/>
-                <Contact/>
                 <Projects/>
+                <Contact/>
             </div>
         )
     }
