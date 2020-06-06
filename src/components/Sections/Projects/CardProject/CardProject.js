@@ -9,7 +9,10 @@ const useStyles = makeStyles({
         maxWidth: 345,
     },
     media: {
-        height: 200,
+        height: 0,
+        width: '200px',
+        paddingTop: '56.25%',
+        margin: 'auto'
     },
 });
 
@@ -34,11 +37,8 @@ const CardProject = () => {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
-                <Button size="small" color="primary">
-                    Learn More
+                <Button size="small" color="primary" href="https://github.com/cupsaA/AlexReactJsPortfolio" target="_blank">
+                    View Github
                 </Button>
             </CardActions>
         </Card>
