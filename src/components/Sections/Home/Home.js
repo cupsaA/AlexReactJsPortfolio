@@ -15,9 +15,10 @@ class Home extends Component {
                     <ul>
                         <Network/>
                     </ul>
-                    <ButtonDown/>
                 </div>
+                <ButtonDown/>
             </section>
+
         )
     }
 }

@@ -1,4 +1,20 @@
-.Contactsection{
+.Contact{
     height: 100vh;
-    background-color: tomato;
+    background-color: blue;
+}
+
+.Contact div{
+    background-color: brown;
+
+}
+
+.Contact div p{
+    background-color: white;
+    display: inline-block;
+
+}
+
+.Contact div i{
+    display: inline-block;
+    margin-right: 10px;
 }

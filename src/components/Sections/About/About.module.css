@@ -31,9 +31,9 @@
 .AboutSection img{
     margin-top: 20px;
     position: relative;
-    width: 150px;
-    height: 120px;
-    border-radius: 50%;
+    width: 170px;
+    height: 150px;
+    border-radius: 25%;
 }
 
 .AboutSection h2{
