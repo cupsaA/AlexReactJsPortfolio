@@ -1,9 +1,7 @@
-import React from "react";
-import classes from './Projects.module.css';
-import {Paper, Grid} from '@material-ui/core';
-import {makeStyles} from '@material-ui/core/styles';
-import CardProject from "./CardProject/CardProject";
-
+import React from 'react';
+import {makeStyles} from "@material-ui/core/styles";
+import {Grid, Paper} from "@material-ui/core";
+import CardStack from "./CardStack/CardStack";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,36 +17,37 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Projects = () => {
+const TechnologyStack = () => {
     const innerClasses = useStyles();
 
     return (
-        <div className={classes.Projects} id="projects">
-            <h1>CHECK OUT SOME OF MY WORK.</h1>
+        <div>
+            <h1>My Favoriut Stacks</h1>
             <Grid container spacing="100%">
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardProject/>
+                        <CardStack/>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardProject/>
+                        <CardStack/>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardProject/>
+                        <CardStack/>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardProject/>
+                        <CardStack/>
                     </Paper>
                 </Grid>
             </Grid>
         </div>
     )
-
 };
-export default Projects;
+
+export default TechnologyStack;
+

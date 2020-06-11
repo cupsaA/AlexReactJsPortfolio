@@ -1,48 +1,25 @@
-import React from "react";
-import {Card,CardActionArea,CardActions,CardContent,CardMedia,Button,Typography} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import React, {Component} from 'react';
+import {Card} from 'react-bootstrap'
 import Logo from '../../../../assets/react-logo.png'
 
 
-const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-    },
-    media: {
-        height: 0,
-        width: '200px',
-        paddingTop: '56.25%',
-        margin: 'auto'
-    },
-});
-
-const CardProject = () => {
-    const classes = useStyles();
-
-    return(
-        <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={Logo}
-                    title="Contemplative Reptile"
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        My React Portfolio
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                       information about my portfolio
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary" href="https://github.com/cupsaA/AlexReactJsPortfolio" target="_blank">
-                    View Github
-                </Button>
-            </CardActions>
-        </Card>
-    )
+class CardProject extends Component {
+    render() {
+        return (
+            <Card className="bg-dark text-white">
+                <Card.Img src={Logo}/>
+                <Card.ImgOverlay>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.
+                    </Card.Text>
+                    <Card.Text>Last updated 3 mins ago</Card.Text>
+                </Card.ImgOverlay>
+            </Card>
+        );
+    }
 }
+
 
 export default CardProject;
