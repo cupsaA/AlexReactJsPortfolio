@@ -19,3 +19,14 @@
     display: inline-block;
     margin-right: 10px;
 }
+
+.ContactForm{
+    margin: auto;
+    width: 50%;
+    background-color: white;
+}
+
+.ContactForm div {
+    background-color: white;
+}
+
