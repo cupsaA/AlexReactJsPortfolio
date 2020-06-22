@@ -25,7 +25,7 @@ const Projects = () => {
     return (
         <div className={classes.Projects} id="projects">
             <h1>CHECK OUT SOME OF MY WORK.</h1>
-            <Grid container spacing="100%">
+            <Grid container spacing='100%'>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
                         <CardProject/>

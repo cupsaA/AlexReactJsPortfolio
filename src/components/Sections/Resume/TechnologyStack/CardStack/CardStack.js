@@ -1,19 +1,15 @@
 import React, {Component} from 'react';
-import {Card, Button} from 'react-bootstrap'
-import Logo from '../../../../../assets/react-logo.png'
+import {Card} from 'react-bootstrap'
 
 class CardStack extends Component {
     render() {
         return (
-            <Card style={{width: '18rem'}}>
-                <Card.Img variant="top" src={Logo}/>
+            <Card style={{width: '15rem' }}>
+                <Card.Img style={{ height:'11rem' }} variant="top" src={this.props.icon} alt='icon'/>
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        {this.props.description}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>
         );

@@ -17,7 +17,7 @@ class PortfolioBuilder extends Component {
         description: null,
         phoneNumber: null,
         email: null,
-    }
+    };
 
     componentDidMount() {
         Axios.get('/myInfo.json')

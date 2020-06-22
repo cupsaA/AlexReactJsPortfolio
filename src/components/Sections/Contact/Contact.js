@@ -11,10 +11,28 @@ class Contact extends Component {
         emailSent: null,
     };
 
+    handleChange = (event) => {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        })
+    };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.setState({
+            disabled: true,
+            emailSent: true
+        });
+    };
+
     render() {
         return (
             <div className={classes.Contact} id="contact" onSubmit={this.handleSubmit}>
-                <div><i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                <div><i className="fa fa-envelope fa-3x" aria-hidden="true"></i>
                     <p>Have a od fit for your team? I'd love to hear from you, give me a shout by email or by using the
                         form below if you'd like to get in contact with me.</p>
                 </div>
@@ -38,12 +56,13 @@ class Contact extends Component {
                                           onChange={this.handleChange}/>
                         </Form.Group>
 
-                        <Button className="d-inline-block" variant="primary" type="submit" disabled={this.state.disabled}>
+                        <Button className="d-inline-block" variant="primary" type="submit"
+                                disabled={this.state.disabled}>
                             Send
                         </Button>
 
-                        {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
-                        {this.state.emailSent === false && <p className="d-inline error-msg">Email Not  Sent</p>}
+                        {this.state.emailSent === true && <p style={{color: "#57A773"}} className={classes.ContactForm}>Email Sent</p>}
+                        {this.state.emailSent === false && <p style={{color: "#EE6352"}}className={classes.ContactForm}>Email Not Sent</p>}
                     </Form>
                 </div>
             </div>
