@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
-import {Card} from 'react-bootstrap'
-import Logo from '../../../../assets/react-logo.png'
+import './CardProject.css'
+import Logo from '../../../../assets/react-logo.png';
 
 
 class CardProject extends Component {
     render() {
         return (
-            <Card style={{height: '15rem'}} className="bg-dark text-white">
-                <Card.Img style={{height: '15rem'}} src={Logo}/>
-                <Card.ImgOverlay>
-                    <Card.Title>Card title</Card.Title>
-                </Card.ImgOverlay>
-            </Card>
+            <div className="card text-center shadow">
+                <div className="overflow">
+                    <img src={Logo} alt='Image 1' className="card-img-top"/>
+                </div>
+                <div className="card-body text-dark">
+                    <h4 className="card-title">Card Ttile</h4>
+                    <p className="card-text text-secondary">lorem ipsum</p>
+                    <a href="#" className="btn btn-outline-success">Go Anywhere</a>
+                </div>
+            </div>
         );
     }
 }
