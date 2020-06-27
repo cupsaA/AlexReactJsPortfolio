@@ -27,7 +27,7 @@ const TechnologyStack = () => {
     const innerClasses = useStyles();
 
     return (
-        <div>
+        <div style={{marginRight: '10%',marginLeft: '10%' }}>
             <h1>My Favoriut Stacks</h1>
             <Grid container spacing="100%">
                 <Grid item xs={3}>
@@ -51,6 +51,7 @@ const TechnologyStack = () => {
                     </Paper>
                 </Grid>
             </Grid>
+
         </div>
     )
 };

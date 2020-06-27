@@ -4,7 +4,7 @@ import './Contact.css'
 class Contact extends Component {
     render() {
         return (
-            <div className="contactpage">
+            <div className="contactPage" id='ceva'>
                 <div>
                     <i className="fa fa-envelope fa-3x" aria-hidden="true"></i>
                     <p>Have a od fit for your team? I'd love to hear from you, give me a shout by email or by using the

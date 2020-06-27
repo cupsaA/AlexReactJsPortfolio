@@ -2,11 +2,20 @@ import React, {Component} from "react";
 import classes from './ButtonDown.module.css'
 
 class ButtonDown extends Component {
+
     render() {
+        const shoot = () => {
+
+            window.scroll({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        };
+
         return (
-            <p className={classes.ButtonDown}>
+            <button onClick={shoot} className={classes.ButtonDown}>
                 <i className="fa fa-chevron-circle-down fa-3x"></i>
-            </p>
+            </button>
         )
     }
 }

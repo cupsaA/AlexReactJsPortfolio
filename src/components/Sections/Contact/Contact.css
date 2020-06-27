@@ -20,10 +20,18 @@ body {
     background: #4CAF50;
 }
 
-.contactpage{
+.contactPage{
     height: 100vh;
     background-color: black;
     width: 100%;
+}
+
+.contactPage div i{
+    display: inline-block;
+}
+
+.contactPage div p{
+    display: inline-block;
 }
 
 .container {
