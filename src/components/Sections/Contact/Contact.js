@@ -32,6 +32,9 @@ class Contact extends Component {
                         </fieldset>
                     </form>
                 </div>
+                <div className="contactInfo">
+                    <p>Info about how to contact me</p>
+                </div>
             </div>
         )
     }

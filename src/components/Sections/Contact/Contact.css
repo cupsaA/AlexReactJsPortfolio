@@ -39,6 +39,15 @@ body {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    display: inline-block;
+
+}
+
+.contactInfo{
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #contact input[type="text"],
