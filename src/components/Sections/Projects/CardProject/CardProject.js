@@ -12,7 +12,6 @@ class CardProject extends Component {
                 </div>
                 <div className="card-body text-dark">
                     <h4 className="card-title">Card Ttile</h4>
-                    <p className="card-text text-secondary">lorem ipsum</p>
                     <a href="#" className="btn btn-outline-success">Go Anywhere</a>
                 </div>
             </div>

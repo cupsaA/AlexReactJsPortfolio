@@ -9,7 +9,7 @@ class Home extends Component {
             <section className={classes.HomeSection} id="home">
                 <div className={classes.HomeSectionCentered}>
                     <h1>{this.props.name}</h1>
-                    <h3>I'm <span>{this.props.occupation}</span> based in {this.props.city} . {this.props.description}.
+                    <h3>I'm <span>{this.props.occupation}</span> based in {this.props.city}{this.props.description}
                     </h3>
                     <hr/>
                     <ul>

@@ -17,6 +17,7 @@ class PortfolioBuilder extends Component {
         description: null,
         phoneNumber: null,
         email: null,
+        aboutMeDescription: null,
     };
 
     componentDidMount() {
@@ -38,7 +39,8 @@ class PortfolioBuilder extends Component {
                 this.setState({
                     phoneNumber: response.data.phone,
                     street : response.data.street,
-                    email: response.data.email
+                    email: response.data.email,
+                    aboutMeDescription: response.data.aboutMeDescription
                     })
                 }
             )
@@ -59,7 +61,8 @@ class PortfolioBuilder extends Component {
                        name={this.state.name}
                        city={this.state.city}
                        street={this.state.street}
-                       email={this.state.email} />
+                       email={this.state.email}
+                       aboutMeDescription={this.state.aboutMeDescription}/>
                 <Resume/>
                 <Projects/>
                 <Contact/>

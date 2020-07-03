@@ -29,25 +29,29 @@ const TechnologyStack = () => {
     return (
         <div style={{marginRight: '10%',marginLeft: '10%' }}>
             <h1>My Favoriut Stacks</h1>
-            <Grid container spacing="100%">
+            <Grid container spacing={2}>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardStack icon={Git} description={"some text about Git ccghvhbjbcgfxcjhkhgfxgchvjklhdgffhgjhkcgxfchvjv"}/>
+                        <CardStack icon={Git} description={"I use Git for all of my projects so far. I have used Git for version control in small teams."}/>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardStack icon={Java}  description={"some text about Java"}/>
+                        <CardStack icon={Java}  description={"Java was my first programming language that I started using in college years ago. It is by far the language" +
+                        " I am most familiar with in terms of data-structure and algorithm programming."}/>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardStack icon={ReactJS}  description={"some text about ReactJs"}/>
+                        <CardStack icon={ReactJS}  description={"I am fairly new to React and really did not like it at first. It has grown on me though and I will continue" +
+                        " to use it going forward. I have built a ReactJS based resume-website template (link below in portfolio) which I used as a starting point for this" +
+                        " personal site."}/>
                     </Paper>
                 </Grid>
                 <Grid item xs={3}>
                     <Paper className={innerClasses.paper}>
-                        <CardStack icon={NodeJs}  description={"some text about NodeJs"}/>
+                        <CardStack icon={NodeJs}  description={"Node JS is my server-side scripting language of choice. The bulk of my experience with it has been in" +
+                        " conjunction with ReactJS-based projects."}/>
                     </Paper>
                 </Grid>
             </Grid>

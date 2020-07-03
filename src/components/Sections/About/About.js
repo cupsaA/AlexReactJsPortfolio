@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import classes from './About.module.css'
 import ProfilePic from "../../../assets/profile-pic.jpg";
+import AboutMe from "./AboutMe/AboutMe";
 
 class About extends Component {
     render() {
@@ -12,7 +13,7 @@ class About extends Component {
                     </div>
                     <div className={classes.AboutSectionColumnRight}>
                         <h2>About Me</h2>
-                        <p>Some info describing me</p>
+                        <div><AboutMe description={this.props.aboutMeDescription}/></div>
                         <h2>Contact Details</h2>
                         <p className="address">
                             <span>{this.props.name}</span><br/>
