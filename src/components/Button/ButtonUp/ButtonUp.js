@@ -7,7 +7,7 @@ class ButtonUp extends Component {
         const shoot = () => {
 
             window.scroll({
-                top: document.body.scrollHeight,
+                top: 0,
                 behavior: 'smooth'
             });
         };

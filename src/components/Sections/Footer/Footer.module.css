@@ -1,3 +1,7 @@
 .Footer {
     background-color: #303030;
 }
+
+.Footer p{
+    margin-bottom: unset;
+}

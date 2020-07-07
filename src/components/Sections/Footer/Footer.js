@@ -9,6 +9,7 @@ class Footer extends Component {
             <div className={classes.Footer}>
                 <ButtonUp/>
                 <Network/>
+                <p>&#169;Copyright 2017 <a>Alex Cupsa</a></p>
             </div>
         );
     }

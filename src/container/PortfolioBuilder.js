@@ -67,7 +67,7 @@ class PortfolioBuilder extends Component {
                 <Resume/>
                 <Projects/>
                 <Contact/>
-                {/*<Footer/>*/}
+                <Footer/>
             </div>
         )
     }
