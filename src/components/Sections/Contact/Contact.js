@@ -10,6 +10,9 @@ class Contact extends Component {
                     <p>Have a od fit for your team? I'd love to hear from you, give me a shout by email or by using the
                         form below if you'd like to get in contact with me.</p>
                 </div>
+                <p style={{color:'red'}}>
+                    This is important
+                </p>
                 <div className="container">
                     <form id="contact" action method="post">
                         <h3>Colorlib Contact Form</h3>
@@ -33,6 +36,9 @@ class Contact extends Component {
                     </form>
                 </div>
                 <div className="contactInfo">
+                    <p>Info about how to contact me</p>
+                    <p>Info about how to contact me</p>
+                    <p>Info about how to contact me</p>
                     <p>Info about how to contact me</p>
                 </div>
             </div>

@@ -13,6 +13,6 @@ const TimelineItem = ({data}) => (
                 <span className={classes.circle}/>
             </div>
         </div>
-)
+);
 
 export default TimelineItem

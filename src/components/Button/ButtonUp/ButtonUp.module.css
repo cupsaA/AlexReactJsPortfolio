@@ -1,0 +1,16 @@
+.ButtonUp {
+    background-color: #303030;
+    color: white;
+    padding: unset;
+}
+
+
+.ButtonUp i::before{
+    background-color: #303030;
+    color: white;
+}
+
+.ButtonUp  i:hover{
+    cursor: pointer;
+    color: #61dafb;
+}

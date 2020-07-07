@@ -5,6 +5,7 @@ import Contact from '../components/Sections/Contact/Contact'
 import Home from '../components/Sections/Home/Home'
 import Projects from "../components/Sections/Projects/Projects";
 import Resume from "../components/Sections/Resume/Resume";
+import Footer from "../components/Sections/Footer/Footer";
 import Axios from "../../src/Axios-data"
 
 class PortfolioBuilder extends Component {
@@ -66,6 +67,7 @@ class PortfolioBuilder extends Component {
                 <Resume/>
                 <Projects/>
                 <Contact/>
+                {/*<Footer/>*/}
             </div>
         )
     }

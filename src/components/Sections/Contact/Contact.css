@@ -22,16 +22,21 @@ body {
 
 .contactPage{
     height: 100vh;
-    background-color: black;
+    background-color: #191919;
     width: 100%;
 }
 
 .contactPage div i{
     display: inline-block;
+    margin-right: 1rem;
+    color: white;
+    margin-top: 1rem;
 }
 
 .contactPage div p{
     display: inline-block;
+    color: white;
+    margin-top: 1rem;
 }
 
 .container {
@@ -40,12 +45,13 @@ body {
     margin: 0 auto;
     position: relative;
     display: inline-block;
+    vertical-align: middle;
 
 }
 
 .contactInfo{
     display: inline-block;
-    max-width: 400px;
+    max-width: 200px;
     width: 100%;
     margin: 0 auto;
 }

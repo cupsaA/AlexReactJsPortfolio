@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import classes from './Home.module.css'
 import Network from './Network/Network'
-import ButtonDown from "../../Button/ButtonDown";
+import ButtonDown from "../../Button/ButtonDown/ButtonDown";
 
 class Home extends Component {
     render() {
