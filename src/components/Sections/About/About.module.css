@@ -24,6 +24,10 @@
     line-height: 30px;
 }
 
+.AboutSectionColumnRight p span{
+    font-size: 15px;
+}
+
 .AboutSectionColumnRight ul {
     color: white;
 }

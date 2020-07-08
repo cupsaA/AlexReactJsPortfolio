@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class AboutMe extends Component {
     render() {
         return (
-            <p>
+            <p style={{fontSize : '15px', width: '500px'}}>
                 {this.props.description}
             </p>
         );

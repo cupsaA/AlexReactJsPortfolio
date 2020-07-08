@@ -37,6 +37,7 @@ body {
     display: inline-block;
     color: white;
     margin-top: 1rem;
+    font-size: medium ;
 }
 
 .container {
@@ -54,6 +55,15 @@ body {
     max-width: 200px;
     width: 100%;
     margin: 0 auto;
+    color: white;
+}
+
+.contactInfo ul li{
+    font-size: medium;
+}
+
+.contactInfo ul{
+    list-style-type: none;
 }
 
 #contact input[type="text"],

@@ -13,7 +13,6 @@ class PortfolioBuilder extends Component {
     state = {
         name: null,
         city: null,
-        street: null,
         occupation: null,
         description: null,
         phoneNumber: null,
@@ -39,7 +38,6 @@ class PortfolioBuilder extends Component {
             .then(response => {
                 this.setState({
                     phoneNumber: response.data.phone,
-                    street : response.data.street,
                     email: response.data.email,
                     aboutMeDescription: response.data.aboutMeDescription
                     })
@@ -61,7 +59,6 @@ class PortfolioBuilder extends Component {
                 <About phoneNumber={this.state.phoneNumber}
                        name={this.state.name}
                        city={this.state.city}
-                       street={this.state.street}
                        email={this.state.email}
                        aboutMeDescription={this.state.aboutMeDescription}/>
                 <Resume/>

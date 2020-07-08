@@ -15,11 +15,10 @@ class About extends Component {
                         <h2>About Me</h2>
                         <div><AboutMe description={this.props.aboutMeDescription}/></div>
                         <h2>Contact Details</h2>
-                        <p className="address">
+                        <p>
                             <span>{this.props.name}</span><br/>
                             <span>{this.props.city}<br/>
-                                {this.props.street}
-                            </span><br/>
+                            </span>
                             <span>{this.props.phoneNumber}</span><br/>
                             <span>{this.props.email}</span>
                         </p>
