@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './CardProject.css'
-import Logo from '../../../../assets/react-logo.png';
 
 
 class CardProject extends Component {
@@ -8,11 +7,11 @@ class CardProject extends Component {
         return (
             <div className="card text-center shadow">
                 <div className="overflow">
-                    <img src={Logo} alt='Image 1' className="card-img-top"/>
+                    <img src={this.props.projectImage} alt='Image 1' className="card-img-top"/>
                 </div>
                 <div className="card-body text-dark">
-                    <h4 className="card-title">Card Ttile</h4>
-                    <a href="#" className="btn btn-outline-success">Go Anywhere</a>
+                    <h4 className="card-title">{this.props.projectTtitle}</h4>
+                    <a href={this.props.githubAddress} target="_blank" className="btn btn-outline-success">Github</a>
                 </div>
             </div>
         );

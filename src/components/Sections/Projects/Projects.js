@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import CardProject from "./CardProject/CardProject";
 import './Projects.css'
+import Logo from '../../../assets/PortfolioImage.png'
 
 class Projects extends Component {
     render() {
@@ -9,13 +10,8 @@ class Projects extends Component {
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="row">
                         <div className="col-md-4">
-                            <CardProject/>
-                        </div>
-                        <div className="col-md-4">
-                            <CardProject/>
-                        </div>
-                        <div className="col-md-4">
-                            <CardProject/>
+                            <CardProject projectImage={Logo} projectTtitle={'Personal Portfolio'}
+                                         githubAddress={'https://github.com/cupsaA/AlexReactJsPortfolio'}/>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,9 @@
 const timelineData = [
     {
-        text: 'Started working as a FullStack Developer on a few projects. The Seo rebuilt for the Betfair' +
-            ' website where I was responsible with implementing Seo features ' +
-            'using ReactJs. ',
+        text: 'Started working as a Full Stack Developer on several projects. Integrating backend Java based components ' +
+            'with third party regulatory APIs for different jurisdictions. In the past year our efforts were concentrated on ' +
+            'creating a Java Api that generated Sitemaps in the context of the Betfair SEO Project. Also, having to work on' +
+            ' an SEO project for the Betfair website made me more interested in other technologies like ReactJS and NodeJS.',
         date: 'August 2019 - Present',
         company: 'Betfair Romania Development',
         category: {
@@ -11,7 +12,10 @@ const timelineData = [
         }
     },
     {
-        text: '',
+        text: 'Having more experience and ownership of several microservices, I always offered advice and code reviews ' +
+            'for the test suites and also working closely with the developers in the team in order to find and fix any ' +
+            'bugs we encountered. Feeling that  I had a vast experience I applied to move from the QA side to the Dev side' +
+            ' of the team.',
         date: 'July 2018 - August 2019',
         company: 'Betfair Romania Development',
         category: {
