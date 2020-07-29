@@ -102,7 +102,7 @@
     right: -40px;
     width: 20px;
     height: 20px;
-    z-index: 100;
+    z-index: 1;
 }
 
 .TimelineItem:nth-child(odd) .TimelineItemContent .circle {

@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import classes from './NavigationBar.module.css'
 import {Link} from 'react-scroll'
 
+
+
 class NavigationBar extends Component{
     render() {
         let prevScrollpos = window.pageYOffset;
